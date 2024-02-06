@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="static/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="static/styles/home.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/static/scripts/scripts.js"></script>
+    <title>Project Page</title>
+  </head>
+  <body>
+      <header class="header">
+        <div class="container">
+          <div class="header__logo">
+            <img src="static/staticimages/CVIT.jpg" alt="logo" class='logo'>
+          </div>
+          <div id="title" class="header__title">
+            <h3><a href="http://cvit.iiit.ac.in/">CVIT</a><br>
+            IIIT,Hyderabad</h3>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="row sampleimages">
+          <div class="col-md-12 Overview">
+          	<h2 class="head">Augment and Adapt : An easy approach to Image Tampering Detection</h2>
+            <h3 class="names"><a href="https://yannadani.github.io/">Yashas Annadani</a> , <a href="https://scholar.google.com/citations?user=U9dH-DoAAAAJ&hl=en">Prof. C.V.Jawahar </a></h3>
+          </div>
+        </div>
+        <div class="row-samples">
+          <h4 id ="technical">Technical Details and Demo</h4>
+          <p>Remember to use only coco dataset for the input files in semantic inpainting , this can be downloaded from the files <a href="#data"> below</a></p>
+          <div class="col-md-12 Overview">
+            <h5>Manual  Augmentation of Images</h5>
+            <p><a href="/upload">Simple Inpainting</a>: Demo<br>
+            	<p>For Semantic Inpainting , one needs to download cocoAPI and have to transfer their python codes inside the cocoAPI folder.Download codes from here :<a href="static/coco.zip"> Coco </a></p>
+              <p><a href="/featherup">Feathering</a> : The demo set consists of training dataset only.</p>
+          </div>
+          <div class="col-md-12 Overview">
+            <h5>Architecture</h5>
+          </div>
+          <div class="col-md-12">
+            <p><a href="/demo">Demo</a> (This demo shows the tampering of IEEE datasets)<br>A parameter <i>K</i>  is taken in order to check the count of tampered patches. For example if <i>K</i>  is 50 and the tampered patches exceed the value of 50 then the image is labeled as tampered. To decide the value of <i>K</i>  , one needs to  break down image into patches first and needs top observe how many of the total patches are tampered in a typical dataset.</p>
+          </div>
+          <div class="col-md-12 Overview">
+            <h5>Extraction of source Images</h5>
+          </div>
+          <div class="col-md-12">
+            <div class ="column-images">
+              <figure>
+                <img src="static/staticimages/casia.png" class ="samples">
+                <figcaption class="figures">Mask generation for the CASIA v2 Dataset</figcaption>
+              </figure>              
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 id="data">Data</h4>
+            <p>The system works on the group of data gathered under different labels and different names.</p>
+              <table class="lists">
+                <tbody>
+                  <tr class="heading">
+                    <td width="420px">Name</td>
+                    <td width="150px">Size</td>
+                    <td width="150px">Information/Download Link</td>
+                  </tr>
+                  <tr>
+                    <td>CASIA v2</td>
+                    <td> 3.27 GB</td>
+                    <td><a href="forensics.idealtest.org/casiav2/"> Visit CASIA</a></td>
+                  </tr>
+                  <tr>
+                    <td>MS COCO(train 2017 with annotations)</td>
+                    <td>18.2 GB</td>
+                    <td><a href="http://cocodataset.org/#download">Visit MS COCO</a></td>
+                  </tr>
+                  <tr>
+                    <td>IEEE Forensics</td>
+                    <td>2.63 GB</td>
+                    <td><a href="ifc.recod.ic.unicamp.br/"> Visit IEEE Forensics Challenge</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>For combined dataset mail the authors @ <a href="mailto:{bprice,scohen}@adobe.com">{bprice,scohen}@adobe.com</a><br>
+              </p>
+            </div>
+          <div class="col-md-12">
+            <h4 id="models">Models and Inference Codes</h4>
+            <p>Download the weights and models</p>
+			<p>Framework Used : Keras, Tensorflow, PyTorchi</p>
+			<p>People Associated with source codes : Yashas Annadani, Rudrabha Mukhopadhyay, Riya Gupta</p>
+            <div class="col-md-12">
+              <p>
+                <a href="static/models.zip" download>Source Codes</a>
+              </p>
+          </div>
+        </div>
+          <div class="col-md-12">
+              <h4>References</h4>
+              <p>Yashas Annadani , C.V.Jawahar - <a href="papers/augment-adapt-simple.pdf">pdf</a> : Original Paper
+              </p>
+			  <p>Riya Gupta : riyagupta771995 [AT] gmail.com </p>
+            </div>
+         </div>
+
+        </div> 
+
+  </body>
+</html>
